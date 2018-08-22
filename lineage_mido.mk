@@ -36,7 +36,7 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE="mido" \
     PRODUCT_NAME="mido" \
-    PRIVATE_BUILD_DESC="mido-user 7.0 NRD90M V9.5.4.0.NAGMIED release-keys"
+    PRIVATE_BUILD_DESC="mido-user 7.0 NRD90M V9.5.4.0.NCFMIED release-keys"
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-BUILD_FINGERPRINT := "Xiaomi/capricorn/capricorn:7.0/NRD90M/V9.5.4.0.NAGMIED:user/release-keys"
+BUILD_FINGERPRINT := "Xiaomi/capricorn/capricorn:7.0/NRD90M/V9.5.4.0.NCFMIED:user/release-keys"
