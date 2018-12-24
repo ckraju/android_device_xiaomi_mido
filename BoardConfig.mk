@@ -18,16 +18,10 @@
 
 DEVICE_PATH := device/xiaomi/mido
 
-#Assert
-TARGET_OTA_ASSERT_DEVICE := mido
-
 # Filesystem
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 TARGET_COPY_OUT_VENDOR := vendor
-
-#HIDL
-DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
 # Kernel
 TARGET_KERNEL_CONFIG := mido_defconfig
@@ -52,7 +46,6 @@ TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/enable_dt2w"
 # Treble
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
 PRODUCT_FULL_TREBLE_OVERRIDE := true
-#PRODUCT_COMPATIBILITY_MATRIX_LEVEL_OVERRIDE := 27
 
 # Inherit from the proprietary version
 -include vendor/xiaomi/mido/BoardConfigVendor.mk

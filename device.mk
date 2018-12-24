@@ -19,7 +19,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n.mk)
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
 
 # Inherit from msm8953-common
 $(call inherit-product, device/xiaomi/msm8953-common/msm8953.mk)
@@ -31,7 +30,7 @@ PRODUCT_COPY_FILES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.0-service.xiaomi_mido
+    android.hardware.biometrics.fingerprint@2.1-service.xiaomi_mido
 
 # Consumerir
 PRODUCT_PACKAGES += \
@@ -39,7 +38,8 @@ PRODUCT_PACKAGES += \
 
 # Ramdisk
 PRODUCT_PACKAGES += \
-    init.mido.rc
+    init.mido.rc \
+    init.goodix.sh
 
 # Sensors
 PRODUCT_COPY_FILES += \
